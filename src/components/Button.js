@@ -1,13 +1,13 @@
-import { Component } from 'react'
+import React, {Component} from 'react'
 
 class Button extends Component {
-  render() {
-    return (
-      <div>
-        // here...
-      </div>
-    )
-  }
+    render() {
+        return (
+            <React.Fragment>
+                // here...
+            </React.Fragment>
+        )
+    }
 }
 
 export default Button
