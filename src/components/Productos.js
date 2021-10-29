@@ -6,15 +6,15 @@ class Productos extends Component {
     render() {
         const {productos, agregarAlCarro} = this.props;
         return (
-            <React.Fragment>
+            <div className="productos">
                 {productos.map((producto) =>
-                    <Producto class='producto'
-                              agregarAlCarro={agregarAlCarro}
-                              key={producto.name}
-                              producto={producto}
-                    />)
+                <Producto 
+                    agregarAlCarro={agregarAlCarro}
+                    key={producto.name}
+                    producto={producto}
+                />)
                 }
-            </React.Fragment>
+            </div>
         );
     }
 }
