@@ -7,7 +7,7 @@ class Producto extends Component {
         const {producto, agregarAlCarro} = this.props
         return (
             <div className="producto">
-                <img src={producto.img} alt={producto.name}/>
+                <img className='img' src={producto.img} alt={producto.name}/>
                 <h3>{producto.name}</h3>
                 <p>{producto.price}</p>
                 <Button className="btn" onClick={() => agregarAlCarro(producto)}>

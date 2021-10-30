@@ -5,11 +5,12 @@ import Carro from "./Carro";
 
 class Navbar extends Component {
     render() {
+        const {carro} = this.props;
         return (
             <React.Fragment>
                 <nav className='navbar'>
                     <Logo/>
-                    <Carro/>
+                    <Carro carro={carro}/>
                 </nav>
             </React.Fragment>
         );
