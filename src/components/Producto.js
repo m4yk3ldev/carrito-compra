@@ -4,7 +4,6 @@ import Button from "./Button";
 
 class Producto extends Component {
     render() {
-        console.log(this.props)
         const {producto, agregarAlCarro} = this.props
         return (
             <div className="producto">
