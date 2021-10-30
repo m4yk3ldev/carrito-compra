@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
+import '../assert/scss/style.scss'
 
 class Button extends Component {
     render() {
         return (
             <React.Fragment>
-                // here...
+                <button {...this.props} ></button>
             </React.Fragment>
         )
     }
